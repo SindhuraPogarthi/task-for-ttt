@@ -84,4 +84,7 @@ Data Source: api/userData.json
 
 Feel free to explore and customize this Next.js application for your social media website! If you have any questions or feedback, please open an issue or reach out to us.
 
+You can directly go to the website by click on the link below 
+https://taskttt.netlify.app/ 
+
 Happy coding! 🚀
