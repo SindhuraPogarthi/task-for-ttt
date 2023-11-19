@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+  border: solid 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* CSS for cover Image */
+.coverContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* CSS for Profile Picture */
+.profilePicture {
+  height: 200px;
+  aspect-ratio: 1;
+
+  position: absolute;
+  top: 125px;
+  left: 100px;
+  border-radius: 50%;
+  border: solid 2px #767676;
+}
+
+/* Person's Details */
+.personDetails {
+  position: absolute;
+  left: 280px;
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scale: 1.5;
+  margin-top: 20px;
+  left: 380px;
+}
+
+.personName {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.personStatsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.personStats {
+  height: min-content;
+  text-align: center;
+  opacity: 0.4;
+  font-size: 1rem;
+}
+
+.personStats span {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.personStatsBox {
+  width: 50px;
+  margin: 3px;
+  padding: 2px;
+  text-align: center;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 5px;
+}
+
+.personBio {
+  scale: 1.1;
+  margin-top: 150px;
+  margin-left: 150px;
+  font-size: large;
+}
+
+.personBio span {
+  font-size: larger;
+  margin: 10px;
+}
+
+.personBio a {
+  color: #99c4ca;
+  margin: 10px 20px;
+}
+
+.postsBox {
+  border: solid grey;
+  border-bottom: none;
+  border-left: none;
+  margin-top: 50px;
+  padding: 20px 30px;
+  display: inline-block;
+  color: #549ad6;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.personBx + hr {
+  margin: 20px;
+  background-color: grey;
+}
+/* .hrStyles{
+  margin-left: 16%;
+} */
+
+.post {
+  border-bottom: solid grey;
+  font-size: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title span {
+    font-weight: bold;
+  }
+
+  .postDetails {
+    display: flex;
+    justify-content: space-between;
+
+    .postInfo{     
+      color: #549ad6;
+    }
+  }
+  
+}
+
+@media (max-width: 1000px) {
+  .coverContainer {
+    height: 150px;
+  }
+
+  .profilePicture {
+    height: 150px;
+  }
+
+  .personDetails {
+    left: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profilePicture {
+    height: 100px;
+    left: 40px;
+  }
+
+  .personDetails {
+    left: 150px;
+    scale: 1;
+  }
+
+  .personBio {
+    scale: 0.8;
+    margin-left: 0;
+    margin-top: 120px;
+  }
+  
+  .postsBox {
+    padding-left: 15px;
+    font-size:medium;
+    margin-top: 30px;
+    
+  }
+
+  .post {
+    font-size: 15px;
+  }
+
+  .postDetails {
+    font-size: 12px;
+  }
+
+  /* .hrStyles{
+    margin-left: 30%;
+  } */
+}
