@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Social Media Profile Page
+
+Welcome to the profile page of our social media website! This Next.js application fetches user data from a local JSON file through a custom API and beautifully displays it on a user's profile page. Users can showcase their cover picture, profile picture, bio, stats, and posts in an elegant and user-friendly layout.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this Next.js application, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   bash
+   git clone https://github.com/SindhuraPogarthi/task-for-ttt
+   
+2. Install dependencies:
+   bash
+   npm install
+   
+3. npm run dev
+   bash
+   Open your browser and navigate to http://localhost:3000 to view the application.
+   
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Profile Overview: Display cover picture, profile picture, username, badge, and verification status.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Stats: Showcase the number of followers and following.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Bio and Links: Present a brief bio and any additional links provided by the user.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Engagement Metrics: Highlight stars, likes, views, and hearts received by the user.
 
-## Learn More
+Posts: List user's posts with details such as title, content, category, date, read time, and views.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js: A React framework for building efficient server-side-rendered web applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+React: A JavaScript library for building user interfaces.
 
-## Deploy on Vercel
+CSS Modules: Localized styles for each React component.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+.
+├── components
+│ ├── [Component files]
+├── pages
+│ ├── index.js
+├── public
+│ ├── images
+├── styles
+│ ├── [Style files]
+├── api
+│ ├── userData.json
+├── README.md
+├── package.json
+└── .gitignore
+
+## API Endpoint
+
+The application fetches user data from the custom API endpoint:
+
+Endpoint: /api/userData
+Data Source: api/userData.json
+
+## Data Structure
+
+- userData.json:
+- coverPicture: URL of the cover picture.
+- profilePicture: URL of the profile picture.
+- username: User's username.
+- diamondBadge: Boolean indicating if the user has a diamond badge.
+- verified: Boolean indicating if the user is verified.
+- followers: Number of followers.
+- following: Number of users being followed.
+- bio: User's bio.
+- otherLinks: Array of additional links.
+- totalStars: Total stars received.
+- totalLikes: Total likes received.
+- totalViews: Total views received.
+- totalHearts: Total hearts received.
+- totalPosts: Total number of posts.
+- posts: Array of user's posts with title, content, category, date, read time, and views.
+
+Feel free to explore and customize this Next.js application for your social media website! If you have any questions or feedback, please open an issue or reach out to us.
+
+Happy coding! 🚀
